@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>SOLAPUR UNIVERSITY</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #78c5e9;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 80px;
+    }
+
+    .form-buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .form-buttons input[type="reset"],
+    .form-buttons input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .form-buttons input[type="reset"]:hover,
+    .form-buttons input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SOLAPUR UNIVERSITY</h1>
+    <h1>Student Registration Form</h1>
+    <form action="process_registration.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" name="dob" id="dob" required>
+
+      <label for="sex">Sex:</label>
+      <select name="sex" id="sex" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="school">School:</label>
+      <input type="text" name="school" id="school" required>
+
+      <label for="address">Address:</label>
+      <textarea name="address" id="address" rows="4" required></textarea>
+
+      <label for="department">Department:</label>
+      <input type="text" name="department" id="department" required>
+
+      <label for="course">Course:</label>
+      <input type="text" name="course" id="course" required>
+
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" name="mobile" id="mobile" required>
+
+      <div class="form-buttons">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Register">
+      </div>
+    </form>
+  </div>
+</body>
+ </html> 
+ 
+ 
